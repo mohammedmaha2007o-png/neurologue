@@ -1,0 +1,445 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeuroLuxe - Cabinet de Neurologie</title>
+  <meta name="description"
+    content="Cabinet de Neurologie premium: expertise avancée, diagnostics de précision et accompagnement humain." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loaderCore"></div>
+    <div class="loaderText">NeuroLuxe</div>
+  </div>
+
+  <div class="cursorGlow" id="cursorGlow" aria-hidden="true"></div>
+
+  <div class="bgOrbs" aria-hidden="true">
+    <span class="orb orbA"></span>
+    <span class="orb orbB"></span>
+    <span class="orb orbC"></span>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a href="#accueil" class="logo">
+        <span class="logoDot"></span>
+        NeuroLuxe
+      </a>
+
+      <button class="menuToggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false"
+        aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="navLinks" id="navLinks">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#temoignages">Témoignages</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="#rdv" class="btn btnPrimary magnetic">Prendre rendez-vous</a>
+    </nav>
+
+    <div class="mobileMenu" id="mobileMenu" aria-hidden="true">
+      <a href="#accueil">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#apropos">À propos</a>
+      <a href="#temoignages">Témoignages</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="#rdv" class="btn btnPrimary">Prendre rendez-vous</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="accueil">
+      <div class="heroLines" aria-hidden="true"></div>
+      <div class="container heroGrid">
+        <div class="heroContent revealUp">
+          <p class="kicker">Cabinet de Neurologie Premium</p>
+          <h1>Votre cerveau mérite une expertise d’exception</h1>
+          <p class="heroText">
+            Une approche neurologique moderne, précise et profondément humaine.
+            Nous combinons innovation, rigueur clinique et accompagnement personnalisé
+            pour chaque étape de votre parcours de santé.
+          </p>
+          <div class="heroActions">
+            <a href="#rdv" class="btn btnPrimary magnetic">Réserver une consultation</a>
+            <a href="#apropos" class="btn btnGhost magnetic">Découvrir le cabinet</a>
+          </div>
+
+          <div class="heroStats" aria-label="Statistiques du cabinet">
+            <article class="statCard glass revealUp" data-delay="120">
+              <h3>15+</h3>
+              <p>années d’expérience</p>
+            </article>
+            <article class="statCard glass revealUp" data-delay="170">
+              <h3>5000+</h3>
+              <p>patients accompagnés</p>
+            </article>
+            <article class="statCard glass revealUp" data-delay="220">
+              <h3>IA & EEG</h3>
+              <p>technologie avancée</p>
+            </article>
+            <article class="statCard glass revealUp" data-delay="270">
+              <h3>24/7</h3>
+              <p>consultation moderne</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="heroVisual revealUp" data-delay="180">
+          <div class="brainWrap glass">
+            <svg viewBox="0 0 500 500" class="brainSvg" aria-hidden="true">
+              <defs>
+                <radialGradient id="g1" cx="50%" cy="45%" r="55%">
+                  <stop offset="0%" stop-color="#7efcff" stop-opacity="0.9" />
+                  <stop offset="50%" stop-color="#5e8bff" stop-opacity="0.65" />
+                  <stop offset="100%" stop-color="#a671ff" stop-opacity="0.18" />
+                </radialGradient>
+              </defs>
+              <circle cx="250" cy="250" r="180" fill="url(#g1)" />
+              <path
+                d="M160 205 C145 150, 210 122, 248 160 C285 122, 355 150, 342 205 C378 233, 372 290, 325 315 C302 360, 196 360, 175 315 C127 292, 122 235, 160 205 Z"
+                fill="none" stroke="#b8faff" stroke-width="6" />
+              <path d="M215 175 C185 205, 190 250, 225 285" fill="none" stroke="#89e8ff" stroke-width="4" />
+              <path d="M280 175 C310 205, 305 250, 272 285" fill="none" stroke="#89e8ff" stroke-width="4" />
+              <path d="M245 165 C250 206, 250 245, 250 320" fill="none" stroke="#c7b6ff" stroke-width="4" />
+              <g class="brainNodes">
+                <circle cx="205" cy="220" r="7" />
+                <circle cx="235" cy="245" r="6" />
+                <circle cx="285" cy="235" r="6" />
+                <circle cx="305" cy="260" r="7" />
+                <circle cx="250" cy="290" r="8" />
+              </g>
+            </svg>
+
+            <span class="pulse pulse1"></span>
+            <span class="pulse pulse2"></span>
+            <span class="pulse pulse3"></span>
+          </div>
+        </div>
+      </div>
+
+      <svg class="separator" viewBox="0 0 1440 180" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,60 C280,190 540,-10 780,84 C1020,178 1210,44 1440,112 L1440,180 L0,180 Z"
+          fill="rgba(255,255,255,0.85)"></path>
+      </svg>
+    </section>
+
+    <section class="about section" id="apropos">
+      <div class="container aboutGrid">
+        <div class="aboutMedia revealLeft">
+          <div class="aboutImage glass">
+            <img src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?auto=format&fit=crop&w=1200&q=80"
+              alt="Neurologue en consultation" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="aboutContent revealRight">
+          <p class="kicker">À propos du cabinet</p>
+          <h2>Une neurologie de précision, dans un cadre serein et futuriste</h2>
+          <p>
+            Notre cabinet propose une expertise complète en neurologie adulte, avec une
+            attention particulière à l’écoute, au diagnostic de haute précision et au suivi
+            continu. Nous associons expérience clinique, technologies innovantes et soins
+            personnalisés pour offrir une médecine rassurante et durable.
+          </p>
+
+          <div class="featureBadges">
+            <span class="badge">Approche humaine</span>
+            <span class="badge">Diagnostic précis</span>
+            <span class="badge">Technologie moderne</span>
+            <span class="badge">Suivi personnalisé</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="sectionHead revealUp">
+          <p class="kicker">Nos services</p>
+          <h2>Expertises neurologiques avancées</h2>
+        </div>
+
+        <div class="servicesGrid">
+          <article class="serviceCard revealUp"><span>🧠</span>
+            <h3>Consultation neurologique</h3>
+            <p>Bilan complet, écoute approfondie et stratégie thérapeutique sur mesure.</p>
+          </article>
+          <article class="serviceCard revealUp" data-delay="60"><span>📈</span>
+            <h3>EEG</h3>
+            <p>Analyse de l’activité cérébrale avec outils modernes et interprétation experte.</p>
+          </article>
+          <article class="serviceCard revealUp" data-delay="120"><span>⚡</span>
+            <h3>EMG</h3>
+            <p>Exploration neuro-musculaire de précision pour un diagnostic fiable.</p>
+          </article>
+          <article class="serviceCard revealUp"><span>🌙</span>
+            <h3>Troubles du sommeil</h3>
+            <p>Évaluation des troubles du sommeil neurologiques et suivi personnalisé.</p>
+          </article>
+          <article class="serviceCard revealUp" data-delay="60"><span>💠</span>
+            <h3>Migraines chroniques</h3>
+            <p>Protocoles de prévention et traitement ciblé des douleurs persistantes.</p>
+          </article>
+          <article class="serviceCard revealUp" data-delay="120"><span>🩺</span>
+            <h3>AVC & rééducation</h3>
+            <p>Prise en charge neurologique et plan de récupération fonctionnelle.</p>
+          </article>
+          <article class="serviceCard revealUp"><span>🌀</span>
+            <h3>Parkinson</h3>
+            <p>Suivi clinique, ajustement thérapeutique et coordination pluridisciplinaire.</p>
+          </article>
+          <article class="serviceCard revealUp" data-delay="60"><span>🔷</span>
+            <h3>Épilepsie</h3>
+            <p>Diagnostic, suivi à long terme et optimisation du traitement antiépileptique.</p>
+          </article>
+          <article class="serviceCard revealUp" data-delay="120"><span>🧩</span>
+            <h3>Troubles de mémoire</h3>
+            <p>Évaluation cognitive et accompagnement progressif des fonctions mnésiques.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="why section" id="pourquoi">
+      <div class="container">
+        <div class="sectionHead revealUp">
+          <p class="kicker">Pourquoi nous choisir</p>
+          <h2>Un écosystème neurologique premium</h2>
+        </div>
+
+        <div class="bentoGrid">
+          <article class="bentoCard large revealUp">
+            <span class="bentoIcon" aria-hidden="true">🧠</span>
+            <h3>Expertise neurologique avancée</h3>
+            <p>Évaluation clinique spécialisée, protocoles rigoureux et décisions thérapeutiques fondées sur l’expertise neurologique.</p>
+            <div class="bentoMeta">
+              <strong class="counter" data-target="15">0</strong>
+              <small>ans d’expertise</small>
+            </div>
+          </article>
+          <article class="bentoCard large revealUp" data-delay="80">
+            <span class="bentoIcon" aria-hidden="true">🔬</span>
+            <h3>Technologies de diagnostic moderne</h3>
+            <p>Neurodiagnostic avancé avec EEG/EMG, analyses précises et lecture experte pour une prise en charge rapide et fiable.</p>
+            <div class="bentoMeta">
+              <strong class="counter" data-target="24">0h</strong>
+              <small>h pour un retour initial</small>
+            </div>
+          </article>
+          <article class="bentoCard revealUp" data-delay="120">
+            <span class="bentoIcon" aria-hidden="true">🩺</span>
+            <h3>Suivi personnalisé</h3>
+            <p>Plan de soins individualisé, adaptation continue des traitements et suivi de proximité.</p>
+          </article>
+          <article class="bentoCard revealUp" data-delay="160">
+            <span class="bentoIcon" aria-hidden="true">⏱️</span>
+            <h3>Prise en charge rapide</h3>
+            <p>Organisation fluide pour limiter les délais et sécuriser un parcours de soin efficace.</p>
+          </article>
+          <article class="bentoCard revealUp" data-delay="220">
+            <span class="bentoIcon" aria-hidden="true">🤝</span>
+            <h3>Approche humaine</h3>
+            <p>Écoute attentive, communication claire et accompagnement rassurant à chaque étape.</p>
+          </article>
+          <article class="bentoCard revealUp" data-delay="280">
+            <span class="bentoIcon" aria-hidden="true">🌿</span>
+            <h3>Environnement apaisant</h3>
+            <p>Cabinet calme, confortable et structuré pour favoriser confiance et sérénité.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials section" id="temoignages">
+      <div class="container">
+        <div class="sectionHead revealUp">
+          <p class="kicker">Témoignages</p>
+          <h2>Ils nous font confiance</h2>
+        </div>
+
+        <div class="testimonialWrap revealUp">
+          <button class="sliderBtn prev" id="prevTestimonial" aria-label="Témoignage précédent">‹</button>
+          <div class="testimonialTrack" id="testimonialTrack">
+            <article class="testimonialCard glass active">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80"
+                alt="Photo patiente" loading="lazy" />
+              <p>“Une écoute exceptionnelle et un diagnostic précis. Je me suis sentie comprise dès la première
+                consultation.”</p>
+              <h4>Leila A.</h4>
+            </article>
+            <article class="testimonialCard glass">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80"
+                alt="Photo patient" loading="lazy" />
+              <p>“Le cabinet combine technologie et humanité. Mon suivi migraine a transformé mon quotidien.”</p>
+              <h4>Yassine M.</h4>
+            </article>
+            <article class="testimonialCard glass">
+              <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=200&q=80"
+                alt="Photo patient" loading="lazy" />
+              <p>“Organisation remarquable, explications claires et vraie disponibilité. Un niveau premium rare.”</p>
+              <h4>Nora B.</h4>
+            </article>
+          </div>
+          <button class="sliderBtn next" id="nextTestimonial" aria-label="Témoignage suivant">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="appointment section" id="rdv">
+      <div class="container appointmentGrid">
+        <div class="appointmentCopy revealLeft">
+          <p class="kicker">Prendre rendez-vous</p>
+          <h2>Réservez votre consultation</h2>
+          <p>
+            Décrivez brièvement votre besoin et choisissez une date. Notre équipe vous
+            recontacte rapidement pour confirmer votre consultation.
+          </p>
+        </div>
+
+        <form class="appointmentForm glass revealRight" id="appointmentForm" novalidate>
+          <div class="field"><input id="name" name="name" type="text" required /><label for="name">Nom complet</label>
+          </div>
+          <div class="field"><input id="email" name="email" type="email" required /><label for="email">Email</label>
+          </div>
+          <div class="field"><input id="phone" name="phone" type="tel" required /><label for="phone">Téléphone</label>
+          </div>
+          <div class="field"><input id="date" name="date" type="date" required /><label for="date">Date
+              souhaitée</label></div>
+          <div class="field full"><textarea id="message" name="message" rows="4" required></textarea><label
+              for="message">Message</label></div>
+          <button type="submit" class="btn btnPrimary magnetic">Réserver votre consultation</button>
+          <p class="formFeedback" id="formFeedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="faq section" id="faq">
+      <div class="container">
+        <div class="sectionHead revealUp">
+          <p class="kicker">FAQ</p>
+          <h2>Questions fréquentes</h2>
+        </div>
+
+        <div class="faqList">
+          <article class="faqItem revealUp">
+            <button class="faqQuestion">Quand consulter pour des migraines fréquentes ?</button>
+            <div class="faqAnswer">
+              <p>Si les migraines deviennent régulières, invalidantes ou résistantes aux traitements habituels, une
+                consultation neurologique est recommandée.</p>
+            </div>
+          </article>
+          <article class="faqItem revealUp" data-delay="60">
+            <button class="faqQuestion">Les douleurs neurologiques nécessitent-elles toujours un examen ?</button>
+            <div class="faqAnswer">
+              <p>Un examen clinique est essentiel pour orienter les explorations. Les examens complémentaires sont
+                prescrits uniquement si nécessaire.</p>
+            </div>
+          </article>
+          <article class="faqItem revealUp" data-delay="120">
+            <button class="faqQuestion">Comment se déroule un EEG ou un EMG ?</button>
+            <div class="faqAnswer">
+              <p>Ces examens sont réalisés en cabinet avec des protocoles standardisés, de manière encadrée, sécurisée
+                et expliquée étape par étape.</p>
+            </div>
+          </article>
+          <article class="faqItem revealUp" data-delay="180">
+            <button class="faqQuestion">Les consultations sont-elles remboursées ?</button>
+            <div class="faqAnswer">
+              <p>Selon votre couverture santé, tout ou partie de la consultation peut être remboursée. Un justificatif
+                complet vous est remis.</p>
+            </div>
+          </article>
+          <article class="faqItem revealUp" data-delay="240">
+            <button class="faqQuestion">Quelle est la durée moyenne d’une consultation ?</button>
+            <div class="faqAnswer">
+              <p>La première consultation dure généralement entre 30 et 45 minutes selon la complexité du dossier.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contactGrid">
+        <div class="contactCard glass revealLeft">
+          <h3>Cabinet de Neurologie NeuroLuxe</h3>
+          <p><strong>Adresse:</strong> 25 Avenue des Sciences, Casablanca</p>
+          <p><strong>Téléphone:</strong> +212 5 22 00 00 00</p>
+          <p><strong>Email:</strong> contact@neuroluxe.ma</p>
+          <p><strong>Horaires:</strong> Lun - Ven 08:30 - 19:00</p>
+          <p><strong>Urgences:</strong> +212 6 00 00 00 00</p>
+          <div class="contactActions">
+            <a href="https://wa.me/212600000000" target="_blank" rel="noopener"
+              class="btn btnGhost magnetic">WhatsApp</a>
+            <a href="tel:+212600000000" class="btn btnPrimary magnetic">Contact urgence</a>
+          </div>
+        </div>
+
+        <div class="mapCard glass revealRight">
+          <iframe title="Carte du cabinet" src="https://www.google.com/maps?q=Casablanca&output=embed" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footerGrid">
+      <div>
+        <a href="#accueil" class="logo"><span class="logoDot"></span>NeuroLuxe</a>
+        <p>Neurologie premium, innovation clinique et accompagnement humain.</p>
+      </div>
+
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#rdv">Rendez-vous</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Suivez-nous</h4>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="LinkedIn">IN</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Newsletter</h4>
+        <form class="newsletter" onsubmit="return false;">
+          <input type="email" placeholder="Votre email" aria-label="Votre email" />
+          <button class="btn btnPrimary magnetic" type="submit">S’inscrire</button>
+        </form>
+      </div>
+    </div>
+    <p class="copyright">© 2026 NeuroLuxe. Tous droits réservés.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
